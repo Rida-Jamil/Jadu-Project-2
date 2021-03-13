@@ -1,0 +1,191 @@
+@media screen and (min-width:1440px), (max-width:1440px) {
+    body {
+        background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+        background-position: left top, right bottom;
+        background-repeat: no-repeat, no-repeat;
+        font-family: 'Spartan', sans-serif;
+    }
+    /* Intro */
+    .main-grid1 {
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        column-gap: 100px;
+        justify-content: center;
+        margin: 0px 10px;
+        padding: 50px;
+    }
+    h1 {
+        color: hsl(300, 43%, 22%);
+        font-weight: 700;
+        font-size: 45px;
+    }
+    .grid1-1>p {
+        color: hsl(303, 10%, 53%);
+        line-height: 22px;
+    }
+    /* Star Ratings */
+    .grid1-2 {
+        margin-top: 35px;
+    }
+    .rate1, .rate2, .rate3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: hsl(300, 43%, 22%);
+        background-color: hsl(300, 24%, 96%);
+        /*  t    r   b   l */
+        margin-top: 15px;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 700;
+        padding: 8px;
+    }
+    .grid1-2>div>div>p {
+        /*  t    r   b   l */
+        margin-left: 30px;
+    }
+    .grid1-2>div>div>img {
+        margin-left: 5px;
+    }
+    .rate1 {
+        margin-right: 40px !important;
+    }
+    .rate2 {
+        margin-left: 50px;
+        margin-right: -10px !important;
+    }
+    .rate3 {
+        margin-left: 100px;
+        margin-right: -50px !important;
+    }
+    /* People Ratings */
+    .main-grid2 {
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        column-gap: 20px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .main-grid2>div>p {
+        padding: 0px 50px 20px 50px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .card1, .card2, .card3 {
+        border-radius: 8px;
+        background-color: hsl(300, 43%, 22%);
+        color: hsl(300, 24%, 96%);
+        font-weight: 400;
+        align-items: center;
+    }
+    .card1 {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .card2 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .card3 {
+        margin-top: 90px;
+        margin-bottom: -10px;
+    }
+    .img-grid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -120px;
+    }
+    h4 {
+        padding-left: 15px;
+    }
+    .dp-image {
+        border-radius: 100px;
+        width: 30px;
+    }
+    span {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    /* Footer CSS */
+    .attribution {
+        color: hsl(300, 43%, 22%);
+        font-size: 11px;
+        text-align: center;
+    }
+    .attribution a {
+        color: hsl(300, 24%, 96%);
+    }
+}
+
+@media screen and (max-width:375px) {
+    body {
+        background-image: url('images/bg-pattern-top-mobile.svg'), url('images/bg-pattern-bottom-mobile.svg');
+        background-position: left top, right bottom;
+        background-repeat: no-repeat, no-repeat;
+    }
+    .main-grid1 {
+        display: block;
+        justify-content: center;
+        margin: 0px 0px;
+        padding: 30px;
+    }
+    h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    .grid1-1>p {
+        text-align: center;
+        line-height: 22px;
+        font-size: 13px;
+    }
+    /* Star Ratings */
+    .rate1, .rate2, .rate3 {
+        display: block;
+        text-align: center;
+        /*  t    r   b   l */
+        margin: 15px 0px 0px 0px !important;
+        border-radius: 8px;
+        padding: 0px;
+    }
+    .grid1-2>div>div>p {
+        margin-left: 0px;
+        padding-bottom: 8px !important;
+    }
+    .grid1-2>div>div>img {
+        padding-top: 8px !important;
+        margin-left: 5px;
+    }
+
+    /* People Ratings */
+    .main-grid2 {
+        display: block;
+        margin: 0px 15px;
+    }
+    .main-grid2>div>p {
+        padding: 0px 50px 20px 50px;
+        font-size: 11px;
+        line-height: 22px;
+    }
+
+    .card1, .card2, .card3 {
+        margin: 0px;
+    }
+    
+    .img-grid {
+        margin-left: -80px;
+    }
+    h4 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .dp-image {
+        border-radius: 100px;
+        width: 30px;
+    }
+    span {
+        font-weight: 500;
+        font-size: 12px;
+    }
+}
